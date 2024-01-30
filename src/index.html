@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="page">
+    <main class="main">
+      <header class="main__header">
+        <div class="main__header_title">Chaos Organizer</div>
+        <form class="main__header_form">
+          <input type="text" class="main__header_input">
+          <button class="main__header_btn header__btn_input_close"></button>
+        </form>
+
+        <button class="main__header_btn btn_search"></button>
+        <div class="header__location_icon"></div>
+        <button class="main__header_btn btn_sidebar"></button>
+      </header>
+
+      <div class="main__list-container">
+        <ul class="main__list-items">
+        </ul>
+
+        <video class="modal-video hidden" controls></video>
+        <!-- <div class="modal-warning hidden">
+          <div class="modal-warning__text"></div>
+          <button class="modal-warning__btn-close"></button>
+        </div> -->
+      </div>
+
+
+      <div class="main__footer">
+        <din class="main__footer_input_controls">
+          <button class="main__footer_btn btn-file active">
+          </button>
+          <form class="main__footer_form">
+            <input type="file" name="file" multiple style="display: none;" class="main__footer_input_file">
+            <input type="text" name="text" class="main__footer_input" placeholder="Написать сообщение...">
+          </form>
+          <div class="main__av_controls">
+            <button class="main__footer_btn btn-audio">
+            </button>
+            <button class="main__footer_btn btn-video">
+            </button>
+          </div>
+        </din>
+
+        <div class="main__record-controls hidden">
+          <div class="main__record-controls_title">
+            <div class="main__record-controls_icon"></div>
+            <div class="main__record-controls_text"></div>
+          </div>
+          <div class="main__record-controls_panel">
+            <button class="main__record-controls_btn btn-start">Старт</button>
+            <button class="main__record-controls_btn btn-stop hidden">Стоп</button>
+            <div class="main__record-timer">00:00</div>
+            <button class="main__record-controls_btn btn-cancel active"></button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside class="sidebar">
+      <div class="sidebar__content">
+        <div class="sidebar__list-types">
+          <h3 class="sidebar__title">Найдено</h3>
+          <ul class="sidebar__list">
+            <li class="sidebar__list-item">
+              <div class="sidebar__list-item_text">Картинки:</div>
+              <div class="sidebar__list-item_text count-images"></div>
+            </li>
+            <li class="sidebar__list-item">
+              <div class="sidebar__list-item_text">Видео:</div>
+              <div class="sidebar__list-item_text count-videos"></div>
+            </li>
+            <li class="sidebar__list-item">
+              <div class="sidebar__list-item_text">Аудио:</div>
+              <div class="sidebar__list-item_text count-audios"></div>
+            </li>
+            <li class="sidebar__list-item">
+              <div class="sidebar__list-item_text">Текстовые сообщения:</div>
+              <div class="sidebar__list-item_text count-messages"></div>
+            </li>
+            <li class="sidebar__list-item">
+              <div class="sidebar__list-item_text">Ссылки:</div>
+              <div class="sidebar__list-item_text count-links"></div>
+            </li>
+            <li class="sidebar__list-item">
+              <div class="sidebar__list-item_text">Шифрованные сообщения:</div>
+              <div class="sidebar__list-item_text count-encrypted-messages"></div>
+            </li>
+            <li class="sidebar__list-item">
+              <div class="sidebar__list-item_text">Прочие файлы:</div>
+              <div class="sidebar__list-item_text count-other-files"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__encryption-panel">
+          <div class="encryption-panel__wrapper_checkbox">
+            <label class="encryption_switch">
+              <input type="checkbox" class="encryption_checkbox">
+              <span class="slider round"></span>
+            </label>
+            <div class="encryption-panel__checkbox_title">шифрование сообщений</div>
+          </div>
+          <button class="encryption-panel__btn">Установить (изменить) ключ</button>
+          <div class="encryption-panel__info-content">Ключ сохраняется на сервере.</div>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+</body>
+
+</html>
